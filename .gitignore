@@ -1,0 +1,43 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+.npmrc
+.netrc
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Generated benchmark data
+cache/
+comparison/
+results/
+runs/
+*.cache.jsonl
+candidate_verdicts.jsonl
+*_people_search_benchmark.csv
+all_linkedin_profiles.csv
+harvestapi_full_profiles.json
+harvestapi_ground_truth.csv
+provider_scorecard.json
+ambiguous_candidates.csv
+unverified_candidates.csv
+
+# User-supplied cohorts; keep only the bundled public cohort
+data/*
+!data/YC_Active_Companies_With_LinkedIn.csv
+
+# Local and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+coverage/
+node_modules/
+.claude/settings.local.json
+.vscode/settings.json
+.idea/
